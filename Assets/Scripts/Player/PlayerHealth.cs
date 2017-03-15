@@ -89,4 +89,15 @@ public class PlayerHealth : MonoBehaviour
     {
 		SceneManager.LoadScene("Level 01");
     }
+
+	//recupera energia do jogador
+	public void addHealth(int add)
+	{
+		currentHealth += add; //recupera energia
+		if (currentHealth > startingHealth) //se passou do limite
+		{
+			currentHealth = startingHealth; //definir como o máximo de energia
+		}
+		healthSlider.value = currentHealth; //atualiza o slider de energia
+	}
 }
