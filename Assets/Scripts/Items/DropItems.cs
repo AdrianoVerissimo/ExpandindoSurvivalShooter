@@ -28,12 +28,13 @@ public class DropItems : MonoBehaviour {
 		Instantiate (item, dropPoint.position, dropPoint.rotation); //instancia o item
 	}
 
+	//verifica se irá dropar um item
 	bool canDrop()
 	{
-		float random = Random.Range(0.0f, 100.0f);
-		if (random <= dropPercent)
+		float random = Random.Range(0.0f, 100.0f); //gera um número aleatório
+		if (random <= dropPercent) //se o número está entre o percentual estabelecido, vai dropar
 			return true;
 
-		return false;
+		return false; //não vai dropar
 	}
 }
