@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour
     public AudioClip deathClip; //áudio que roda ao este inimigo morrer
 
 
+	DropItems dropItems;
+
     Animator anim;
     AudioSource enemyAudio; //áudio de quando o inimigo leva dano
     ParticleSystem hitParticles;
@@ -23,6 +25,7 @@ public class EnemyHealth : MonoBehaviour
         enemyAudio = GetComponent <AudioSource> ();
         hitParticles = GetComponentInChildren <ParticleSystem> (); //busca neste objeto ou em seus filhos o primeiro componente ParticleSystem que encontrar
         capsuleCollider = GetComponent <CapsuleCollider> ();
+		dropItems = GetComponent <DropItems> ();
 
         currentHealth = startingHealth;
     }
@@ -70,6 +73,12 @@ public class EnemyHealth : MonoBehaviour
 
         enemyAudio.clip = deathClip; //atribui o áudio do inimigo morrendo
         enemyAudio.Play (); //toca o áudio
+
+		//se passou script para dropar ítens
+		if (dropItems != null)
+		{
+			dropItems.drop (); //dropar item
+		}
     }
 
 	//método responsável por fazer o inimigo afundar no chão
