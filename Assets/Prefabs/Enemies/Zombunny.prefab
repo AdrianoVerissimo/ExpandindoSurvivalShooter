@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 1953450431462376, guid: e91bcd5a343331e448bcf57dd8ad4392, type: 2}
+  - {fileID: 0}
   dropPoint: {fileID: 4364442855372704}
   dropPercent: 100
 --- !u!114 &114494745029789016
