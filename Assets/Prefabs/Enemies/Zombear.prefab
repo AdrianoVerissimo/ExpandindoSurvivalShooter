@@ -265,7 +265,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: 1953450431462376, guid: e91bcd5a343331e448bcf57dd8ad4392, type: 2}
-  - {fileID: 1730321891730114, guid: 8db276f79b890804c904f9ccac419918, type: 2}
   dropPoint: {fileID: 4195511194816822}
   dropPercent: 20
 --- !u!114 &114419806152210906
@@ -279,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  startingHealth: 120
   currentHealth: 0
   sinkSpeed: 2.5
   scoreValue: 10

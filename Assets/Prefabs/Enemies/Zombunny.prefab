@@ -280,7 +280,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 1953450431462376, guid: e91bcd5a343331e448bcf57dd8ad4392, type: 2}
   - {fileID: 1730321891730114, guid: 8db276f79b890804c904f9ccac419918, type: 2}
   dropPoint: {fileID: 4364442855372704}
   dropPercent: 20
@@ -385,7 +384,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1307354269462476}
   m_Enabled: 1
   m_Radius: 0.3
-  m_Speed: 3
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 114331935871944168}
   - component: {fileID: 114200579612894942}
   m_Layer: 0
-  m_Name: MoveItem
+  m_Name: SpeedItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2718e61518b7a498857d95e5a4176b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 2
+  value: 0.5
 --- !u!114 &114331935871944168
 MonoBehaviour:
   m_ObjectHideFlags: 1
