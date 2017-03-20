@@ -5,6 +5,7 @@ public class PlayerShooting : MonoBehaviour
     public int damagePerShot = 20; //dano de cada tiro
     public float timeBetweenBullets = 0.15f; //tempo entre os tiros
     public float range = 100f; //distância que o tiro alcança
+	public int levelForShoot = 1;
 
 
     float timer; //contador utilizado para atirar somente quando puder
@@ -17,6 +18,9 @@ public class PlayerShooting : MonoBehaviour
 	Light gunLight; //referência para a luz do tiro
     float effectsDisplayTime = 0.2f; //quanto tempo os efeitos estarão visíveis
 
+	GameObject player;
+	PlayerStatus playerStatus;
+
 
     void Awake ()
     {
@@ -26,11 +30,17 @@ public class PlayerShooting : MonoBehaviour
         gunLine = GetComponent <LineRenderer> ();
         gunAudio = GetComponent<AudioSource> ();
         gunLight = GetComponent<Light> ();
+
+		player = GameObject.FindGameObjectWithTag ("Player"); //pega objeto do jogador
+		if (player != null)
+		{
+			playerStatus = player.GetComponentInChildren <PlayerStatus> (); //pega o script PlayerMovement do jogador
+		}
     }
 
 
     void Update ()
-    {
+    {		
         timer += Time.deltaTime; //atualiza o contador de tempo
 
 		//se estiver apertando botão de atirar e está dentro do tempo para atirar
@@ -56,6 +66,9 @@ public class PlayerShooting : MonoBehaviour
 	//atirar
     void Shoot ()
     {
+		if (playerStatus.shootingLevel < levelForShoot)
+			return;
+		
         timer = 0f; //reseta o contador de tempo de tiro
 
         gunAudio.Play (); //toca o áudio do tiro
@@ -89,4 +102,6 @@ public class PlayerShooting : MonoBehaviour
             gunLine.SetPosition (1, shootRay.origin + shootRay.direction * range); //desenha o tiro normalmente
         }
     }
+
+
 }
