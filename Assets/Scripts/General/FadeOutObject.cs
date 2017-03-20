@@ -5,33 +5,43 @@ using UnityEngine;
 public class FadeOutObject : MonoBehaviour {
 
 	public bool destroyOnFinish = true;
-	public float fadeVelocity = 2.0f;
+	public float fadeTime = 2.0f;
 
 	Color color;
 	float currentAlpha;
+	float timer = 0f;
+
+
+	//ver esta documentação:
+	//https://docs.unity3d.com/ScriptReference/Mathf.SmoothDamp.html
 
 	// Use this for initialization
 	void Start () {
 		color = GetComponent<MeshRenderer> ().material.color;
 		color.a = 0.0f;
 		currentAlpha = GetComponent<MeshRenderer> ().material.color.a;
+
+		Invoke ("DestroyObject", fadeTime);
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-		/*GetComponent<MeshRenderer> ().material.color = Color.Lerp (
+		/*currentAlpha = Mathf.SmoothStep (0f, 10f, 20.0f);
+		Debug.Log (currentAlpha);
+
+		GetComponent<MeshRenderer> ().material.color = new Color(
+			GetComponent<MeshRenderer> ().material.color.r,
+			GetComponent<MeshRenderer> ().material.color.g,
+			GetComponent<MeshRenderer> ().material.color.b,
+			currentAlpha);*/
+
+		/*timer = Time.deltaTime / fadeTime;
+		GetComponent<MeshRenderer> ().material.color = Color.Lerp (
 			GetComponent<MeshRenderer> ().material.color,
 			color,
-			0.05f);
-
-		float alpha = GetComponent<MeshRenderer> ().material.color.a;
-
-		if (Mathf.Clamp01(alpha) <= 0f)
-		{
-			Destroy (gameObject);
-		}*/
-
+			timer);
+		*/
 		/*if (Mathf.Clamp(GetComponent<MeshRenderer> ().material.color.a, 0.0f, 1.0f) <= 0.0f)
 			Debug.Log ("----------------------------------------oi----------------------------------------");
 		Debug.Log ((float)GetComponent<MeshRenderer> ().material.color.a);*/
@@ -53,5 +63,10 @@ public class FadeOutObject : MonoBehaviour {
 		{
 			Destroy (gameObject);
 		}*/
+	}
+
+	public void DestroyObject()
+	{
+		Destroy (gameObject);
 	}
 }

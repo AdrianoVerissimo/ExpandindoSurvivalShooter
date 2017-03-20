@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ItemFadeOut
+  m_Name: SpeedItemFadeOut
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 1
+        value: 0.22626507
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 5
-        value: 1
+        value: 0.22626507
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -35,7 +35,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.r
-    path: 
+    path: SpriteModel
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -43,13 +43,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 1
+        value: 0.992647
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 5
-        value: 1
+        value: 0.992647
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -57,7 +57,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.g
-    path: 
+    path: SpriteModel
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -65,13 +65,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 1
+        value: 0.9609346
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 5
-        value: 1
+        value: 0.9609346
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -79,7 +79,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.b
-    path: 
+    path: SpriteModel
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -107,7 +107,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.a
-    path: 
+    path: SpriteModel
     classID: 23
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -118,25 +118,25 @@ AnimationClip:
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
     genericBindings:
-    - path: 0
+    - path: 4245364611
       attribute: 2108656497
       script: {fileID: 0}
       classID: 23
       customType: 22
       isPPtrCurve: 0
-    - path: 0
+    - path: 4245364611
       attribute: 1303350129
       script: {fileID: 0}
       classID: 23
       customType: 22
       isPPtrCurve: 0
-    - path: 0
+    - path: 4245364611
       attribute: 1571785585
       script: {fileID: 0}
       classID: 23
       customType: 22
       isPPtrCurve: 0
-    - path: 0
+    - path: 4245364611
       attribute: 1840221041
       script: {fileID: 0}
       classID: 23
@@ -169,13 +169,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 1
+        value: 0.22626507
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 5
-        value: 1
+        value: 0.22626507
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -183,7 +183,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.r
-    path: 
+    path: SpriteModel
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -191,13 +191,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 1
+        value: 0.992647
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 5
-        value: 1
+        value: 0.992647
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -205,7 +205,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.g
-    path: 
+    path: SpriteModel
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -213,13 +213,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 1
+        value: 0.9609346
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 5
-        value: 1
+        value: 0.9609346
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -227,7 +227,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.b
-    path: 
+    path: SpriteModel
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -255,7 +255,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._Color.a
-    path: 
+    path: SpriteModel
     classID: 23
     script: {fileID: 0}
   m_EulerEditorCurves: []

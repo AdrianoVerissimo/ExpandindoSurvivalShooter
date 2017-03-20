@@ -8,6 +8,8 @@ public class DropItems : MonoBehaviour {
 	public Transform dropPoint; //onde o item aparecerá
 	public float dropPercent = 50.0f; //percentual para o item aparecer
 
+	int itemPosition = 0;
+
 	void Start()
 	{
 		if (items.Length == 0) {
@@ -20,9 +22,11 @@ public class DropItems : MonoBehaviour {
 	{
 		if (!canDrop())
 			return;
-		
-		GameObject item = items [Random.Range (0, items.Length)]; //pega um ítem aleatório
-		if (item == null)
+
+		//pega um item aleatório da lista
+		itemPosition = Random.Range (0, items.Length);
+		GameObject item = items [itemPosition]; //pega um ítem aleatório
+		if (item == null) //se não encontrou item, retornar
 			return;
 
 		Instantiate (item, dropPoint.position, dropPoint.rotation); //instancia o item

@@ -3,6 +3,7 @@
 public class PlayerMovement : MonoBehaviour
 {
 	public float speed = 6.0f;
+	public float maxSpeed = 10.0f;
 
 	private Vector3 movement; //movimentação
 	private Animator anim; //animações
@@ -71,5 +72,12 @@ public class PlayerMovement : MonoBehaviour
 		//define animação de andar
 		bool walking = h != 0 || v != 0;
 		anim.SetBool ("IsWalking", walking);
+	}
+
+	public void addSpeed(float value)
+	{
+		speed += value;
+		if (speed > maxSpeed)
+			speed = maxSpeed;
 	}
 }
