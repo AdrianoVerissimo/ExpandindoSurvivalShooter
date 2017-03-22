@@ -3,7 +3,7 @@
 public class EnemyManager : MonoBehaviour
 {
     public PlayerHealth playerHealth; //referência para energia do jogador
-    public GameObject enemy; //referência para o inimigo que queremos dar spawn
+    public GameObject[] enemies; //referência para o inimigo que queremos dar spawn
     public float spawnTime = 3f; //tempo para dar spawn em um novo inimigo
     public Transform[] spawnPoints; //guarda os pontos de spawns
 
@@ -24,7 +24,12 @@ public class EnemyManager : MonoBehaviour
 
         int spawnPointIndex = Random.Range (0, spawnPoints.Length); //pega aleatoriamente um dos pontos de spawn passados como parâmetro
 
+		int posArrayEnemies = 0;
+
+		if (enemies.Length > 0)
+			posArrayEnemies = Random.Range (0, enemies.Length);
+
 		//instancia o inimigo
-        Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+		Instantiate (enemies[posArrayEnemies], spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
     }
 }

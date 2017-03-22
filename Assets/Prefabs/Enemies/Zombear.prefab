@@ -268,7 +268,7 @@ MonoBehaviour:
   - {fileID: 1485389397952018, guid: edf6ac23246f50b458aa9319bb4cca7d, type: 2}
   - {fileID: 1730321891730114, guid: 8db276f79b890804c904f9ccac419918, type: 2}
   dropPoint: {fileID: 4195511194816822}
-  dropPercent: 20
+  dropPercent: 50
 --- !u!114 &114419806152210906
 MonoBehaviour:
   m_ObjectHideFlags: 1
