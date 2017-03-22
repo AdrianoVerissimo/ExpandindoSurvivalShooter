@@ -281,6 +281,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: 1730321891730114, guid: 8db276f79b890804c904f9ccac419918, type: 2}
+  - {fileID: 1953450431462376, guid: e91bcd5a343331e448bcf57dd8ad4392, type: 2}
+  - {fileID: 1485389397952018, guid: edf6ac23246f50b458aa9319bb4cca7d, type: 2}
   dropPoint: {fileID: 4364442855372704}
   dropPercent: 20
 --- !u!114 &114494745029789016

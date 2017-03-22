@@ -4,6 +4,7 @@ public class PlayerShooting : MonoBehaviour
 {
     public int damagePerShot = 20; //dano de cada tiro
     public float timeBetweenBullets = 0.15f; //tempo entre os tiros
+	public float minTimeBetweenBullets = 0.1f;
     public float range = 100f; //distância que o tiro alcança
 	public int levelForShoot = 1;
 
@@ -103,5 +104,11 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 
-
+	public void upgradeShootingVelocity()
+	{
+		timeBetweenBullets -= 0.02f;
+		Debug.Log (timeBetweenBullets);
+		if (timeBetweenBullets < minTimeBetweenBullets)
+			timeBetweenBullets = minTimeBetweenBullets;
+	}
 }
