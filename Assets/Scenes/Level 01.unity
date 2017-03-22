@@ -628,6 +628,7 @@ GameObject:
   - component: {fileID: 698996934}
   - component: {fileID: 698996935}
   - component: {fileID: 698996936}
+  - component: {fileID: 698996937}
   m_Layer: 0
   m_Name: EnemyManager
   m_TagString: Untagged
@@ -696,6 +697,22 @@ MonoBehaviour:
   spawnTime: 10
   spawnPoints:
   - {fileID: 216593699}
+--- !u!114 &698996937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 698996932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a99222b1e4a384e923ac7e86efc709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 665002612}
+  enemy: {fileID: 1215918193632234, guid: f5fe7f3448bfb5a45b1b0e431da47d79, type: 2}
+  spawnTime: 30
+  spawnPoints:
+  - {fileID: 1433412236}
 --- !u!1001 &745795145
 Prefab:
   m_ObjectHideFlags: 0
@@ -1102,11 +1119,6 @@ Prefab:
       propertyPath: damageImage
       value: 
       objectReference: {fileID: 1321790830}
-    - target: {fileID: 82390532757559536, guid: a5dcb8aefd3d5c74f8a63752fc60f31e,
-        type: 2}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5dcb8aefd3d5c74f8a63752fc60f31e, type: 2}
   m_IsPrefabParent: 0
