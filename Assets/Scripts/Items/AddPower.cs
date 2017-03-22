@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AddPower : MonoBehaviour {
 	GameObject player;
-	PlayerStatus playerStatus;
 	PlayerShooting playerShooting;
 
 	void Awake()
@@ -12,8 +11,7 @@ public class AddPower : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Player"); //pega objeto do jogador
 		if (player != null)
 		{
-			playerStatus = player.GetComponentInChildren <PlayerStatus> (); //pega o script PlayerMovement do jogador
-			playerShooting = player.GetComponentInChildren <PlayerShooting> ();
+			playerShooting = player.GetComponentInChildren <PlayerShooting> (); //pega o script PlayerShooting do jogador
 		}
 	}
 
@@ -23,7 +21,6 @@ public class AddPower : MonoBehaviour {
 		if (other.CompareTag ("Player"))
 		{
 			//add power
-			//playerStatus.upgradeShootLevel();
 			playerShooting.upgradeShootingVelocity();
 
 			//destrói objeto

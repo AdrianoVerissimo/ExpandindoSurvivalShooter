@@ -982,6 +982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePerShot: 20
   timeBetweenBullets: 0.15
+  minTimeBetweenBullets: 0.6
   range: 100
   levelForShoot: 3
 --- !u!114 &114255416157735028
@@ -1010,6 +1011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePerShot: 20
   timeBetweenBullets: 0.15
+  minTimeBetweenBullets: 0.6
   range: 100
   levelForShoot: 2
 --- !u!114 &114584537529116750
@@ -1025,6 +1027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePerShot: 20
   timeBetweenBullets: 0.15
+  minTimeBetweenBullets: 0.6
   range: 100
   levelForShoot: 3
 --- !u!114 &114663037723744400
@@ -1040,6 +1043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePerShot: 20
   timeBetweenBullets: 0.15
+  minTimeBetweenBullets: 0.6
   range: 100
   levelForShoot: 2
 --- !u!114 &114706852126477204
@@ -1067,7 +1071,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePerShot: 20
-  timeBetweenBullets: 0.15
+  timeBetweenBullets: 0.16
+  minTimeBetweenBullets: 0.1
   range: 100
   levelForShoot: 1
 --- !u!114 &114864503103803886

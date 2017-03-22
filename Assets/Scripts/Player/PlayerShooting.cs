@@ -104,10 +104,12 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 
+	//aumenta velocidade do tiro
 	public void upgradeShootingVelocity()
 	{
-		timeBetweenBullets -= 0.02f;
-		Debug.Log (timeBetweenBullets);
+		timeBetweenBullets -= 0.02f; //diminui o tempo entre as balas
+
+		//passou do limite, então colocar o valor do limite
 		if (timeBetweenBullets < minTimeBetweenBullets)
 			timeBetweenBullets = minTimeBetweenBullets;
 	}
