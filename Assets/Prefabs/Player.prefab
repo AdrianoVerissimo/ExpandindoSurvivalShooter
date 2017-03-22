@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 82467968757825180}
   - component: {fileID: 114706852126477204}
   - component: {fileID: 114864503103803886}
-  - component: {fileID: 114255416157735028}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -53,7 +52,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1627252924668874
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,7 +110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1702519007261482
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1870518674342548
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4082926647721310
 Transform:
   m_ObjectHideFlags: 1
@@ -470,7 +469,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: fa7f046ce321d4021b5e753bf1152916, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -985,19 +984,6 @@ MonoBehaviour:
   minTimeBetweenBullets: 0.6
   range: 100
   levelForShoot: 3
---- !u!114 &114255416157735028
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1038491979765808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89f7a678e7474ec46a2ddb1f5fb08718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootingLevel: 1
-  maxShootingLevel: 3
 --- !u!114 &114403164363860348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1737,7 +1723,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 552621540
+  randomSeed: -1128128155
   InitialModule:
     serializedVersion: 3
     enabled: 1

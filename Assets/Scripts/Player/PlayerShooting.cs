@@ -67,8 +67,8 @@ public class PlayerShooting : MonoBehaviour
 	//atirar
     void Shoot ()
     {
-		if (playerStatus.shootingLevel < levelForShoot)
-			return;
+		/*if (playerStatus.shootingLevel < levelForShoot)
+			return;*/
 		
         timer = 0f; //reseta o contador de tempo de tiro
 
